@@ -14,6 +14,17 @@ package org.usfirst.frc.team2526.robot;
  * floating around.
  */
 public class RobotMap {
+	
+	public static int DT_FRONTLEFT = 4;
+	public static int DT_BACKLEFT = 11;
+	public static int DT_FRONTRIGHT = 3;
+	public static int DT_BACKRIGHT= 9;
+	
+	// public and static are just modifiers so don't worry about them.
+    // int is an integer and those numbers are the talon IDs
+	// DT_FRONTLEFT is just the name we are using so we know which of the 4 talons we are referencing
+	 
+	
 	// For example to map the left and right motors, you could define the
 	// following variables to use with your drivetrain subsystem.
 	// public static int leftMotor = 1;
