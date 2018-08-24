@@ -20,6 +20,7 @@ public class RobotMap {
 	public static int DT_FRONTRIGHT = 3;
 	public static int DT_BACKRIGHT= 9;
 	
+	
 	// public and static are just modifiers so don't worry about them.
     // int is an integer and those numbers are the talon IDs
 	// DT_FRONTLEFT is just the name we are using so we know which of the 4 talons we are referencing
@@ -29,6 +30,15 @@ public class RobotMap {
 	// following variables to use with your drivetrain subsystem.
 	// public static int leftMotor = 1;
 	// public static int rightMotor = 2;
+	
+	public static int SHOOT_L = 1;
+	public static int SHOOT_R = 2;
+	
+	public static int Elevator_L = 5;
+	public static int Elevator_R = 6;
+	public static int LIMITUP = 1;
+	public static int LITMITLOW = 2;
+
 
 	// If you are using multiple modules, make sure to define both the port
 	// number and the module. For example you with a rangefinder:

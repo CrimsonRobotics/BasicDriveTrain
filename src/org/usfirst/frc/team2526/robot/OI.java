@@ -7,7 +7,10 @@
 
 package org.usfirst.frc.team2526.robot;
 
+import org.usfirst.frc.team2526.robot.commands.ShootOut;
+
 import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -17,7 +20,22 @@ public class OI {
 	
 	private Joystick driverLeft = new Joystick(0);		//Joysticks are defined; Joystick "driverLeft" is in port 0
 	private Joystick driverRight = new Joystick(1);		//Joysticks are defined; Joystick "driverright" is in port 1
+	private Joystick coDriver = new Joystick(2);
+	private JoystickButton shoots = new JoystickButton(coDriver,1);
 	
+	
+	public OI(){
+		shoots.whileHeld(new ShootOut());
+		
+		
+	}
+	
+	
+	
+	public Joystick getcoDriver(){
+		
+		return coDriver;
+	}
 	
 	public Joystick getDriverLeft(){
 		

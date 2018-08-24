@@ -14,7 +14,9 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc.team2526.robot.commands.ExampleCommand;
 import org.usfirst.frc.team2526.robot.subsystems.DriveTrain;
+import org.usfirst.frc.team2526.robot.subsystems.ElevatorExample;
 import org.usfirst.frc.team2526.robot.subsystems.ExampleSubsystem;
+import org.usfirst.frc.team2526.robot.subsystems.ShooterExample;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -29,7 +31,8 @@ public class Robot extends TimedRobot {
 	public static final DriveTrain driveTrain = new DriveTrain(RobotMap.DT_FRONTLEFT, RobotMap.DT_BACKLEFT, RobotMap.DT_FRONTRIGHT, RobotMap.DT_BACKRIGHT);
 	//this pulls the Talon IDs and puts them in one drivetrain
 	//this method will appear in the DriveTrain Subsystem to pull IDs and to define Talons
-	
+	public static final ShooterExample Shooter = new ShooterExample(RobotMap.SHOOT_L, RobotMap.SHOOT_R);
+	public static final ElevatorExample Elevator = new ElevatorExample(RobotMap.Elevator_L, RobotMap.Elevator_R , RobotMap.LIMITUP, RobotMap.LITMITLOW);
 	
 	Command m_autonomousCommand;
 	SendableChooser<Command> m_chooser = new SendableChooser<>();
