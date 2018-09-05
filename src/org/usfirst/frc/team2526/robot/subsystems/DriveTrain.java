@@ -51,12 +51,18 @@ public class DriveTrain extends Subsystem {
 	
 		drive = new DifferentialDrive(this.leftDrive, this.rightDrive);
 	    
+		
+		bL.setInverted(false);
+		bR.setInverted(false);
+		fL.setInverted(false);
+		fR.setInverted(false);
+		
 		//Drivetrain is made
 	}
 	
 	public void TeleOpCraneDrive(Joystick left, Joystick right){
 		
-		drive.arcadeDrive(-left.getY(), -right.getX(), true);
+		drive.arcadeDrive(-left.getY(), right.getX(), true);
 		
 	}
 	

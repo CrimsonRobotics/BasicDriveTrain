@@ -16,9 +16,9 @@ package org.usfirst.frc.team2526.robot;
 public class RobotMap {
 	
 	public static int DT_FRONTLEFT = 4;
-	public static int DT_BACKLEFT = 11;
-	public static int DT_FRONTRIGHT = 3;
-	public static int DT_BACKRIGHT= 6;
+	public static int DT_BACKLEFT = 3;
+	public static int DT_FRONTRIGHT = 11;
+	public static int DT_BACKRIGHT= 9;
 	
 	
 	// public and static are just modifiers so don't worry about them.
