@@ -54,6 +54,11 @@ tmp/
 /.idea
 .classpath
 settings.json
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # FRC Directories and Files #
 /bin/
